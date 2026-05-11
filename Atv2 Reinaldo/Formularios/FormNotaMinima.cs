@@ -15,7 +15,7 @@ namespace SimuladorMedia.Formularios
         public FormNotaMinima()
         {
             InitializeComponent();
-            lbMenssagem.Visible = false;
+            lbMensagem.Visible = false;
         }
 
         private void btCalcular_Click(object sender, EventArgs e)
@@ -36,8 +36,8 @@ namespace SimuladorMedia.Formularios
             else
             {
                 NPEX = (500 - 6 * mediaFinal) / 4;
-                lbMenssagem.Text = $"O acadêmico(a) {nome} precisa de \n {NPEX} pontos para ser aprovado(a)";
-                lbMenssagem.Visible = true;
+                lbMensagem.Text = $"O acadêmico(a) {nome} precisa de \n {NPEX} pontos para ser aprovado(a)";
+                lbMensagem.Visible = true;
             }
 
         }
@@ -47,8 +47,8 @@ namespace SimuladorMedia.Formularios
             txtMediaFinalAluno.Clear();
             txtNomeAluno.Clear();
             txtNomeAluno.Focus();
-            lbMenssagem.Visible = false;
-            lbMenssagem.Text = "Menssagem";
+            lbMensagem.Visible = false;
+            lbMensagem.Text = "Menssagem";
         }
 
         private void txtMediaFinalAluno_KeyUp(object sender, KeyEventArgs e)

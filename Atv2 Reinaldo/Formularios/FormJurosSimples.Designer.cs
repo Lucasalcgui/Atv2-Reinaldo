@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btCalcular = new System.Windows.Forms.Button();
             this.btLimpar = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.txtCapital = new System.Windows.Forms.TextBox();
@@ -47,26 +47,30 @@
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btCalcular
             // 
-            this.button1.Location = new System.Drawing.Point(379, 494);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "CALCULAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btCalcular.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCalcular.Location = new System.Drawing.Point(94, 499);
+            this.btCalcular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btCalcular.Name = "btCalcular";
+            this.btCalcular.Size = new System.Drawing.Size(176, 49);
+            this.btCalcular.TabIndex = 0;
+            this.btCalcular.Text = "CALCULAR";
+            this.btCalcular.UseVisualStyleBackColor = false;
+            this.btCalcular.Click += new System.EventHandler(this.button1_Click);
             // 
             // btLimpar
             // 
-            this.btLimpar.Location = new System.Drawing.Point(605, 494);
+            this.btLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btLimpar.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLimpar.Location = new System.Drawing.Point(320, 499);
             this.btLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(176, 49);
             this.btLimpar.TabIndex = 1;
             this.btLimpar.Text = "LIMPAR";
-            this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.UseVisualStyleBackColor = false;
             this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click_1);
             // 
             // contextMenuStrip1
@@ -77,99 +81,104 @@
             // 
             // txtCapital
             // 
-            this.txtCapital.Location = new System.Drawing.Point(628, 227);
+            this.txtCapital.Location = new System.Drawing.Point(320, 232);
             this.txtCapital.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCapital.Name = "txtCapital";
-            this.txtCapital.Size = new System.Drawing.Size(154, 22);
+            this.txtCapital.Size = new System.Drawing.Size(177, 22);
             this.txtCapital.TabIndex = 3;
             // 
             // txtTaxa
             // 
-            this.txtTaxa.Location = new System.Drawing.Point(628, 292);
+            this.txtTaxa.Location = new System.Drawing.Point(320, 297);
             this.txtTaxa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTaxa.Name = "txtTaxa";
-            this.txtTaxa.Size = new System.Drawing.Size(154, 22);
+            this.txtTaxa.Size = new System.Drawing.Size(177, 22);
             this.txtTaxa.TabIndex = 4;
             // 
             // txtTempo
             // 
-            this.txtTempo.Location = new System.Drawing.Point(628, 363);
+            this.txtTempo.Location = new System.Drawing.Point(320, 368);
             this.txtTempo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTempo.Name = "txtTempo";
-            this.txtTempo.Size = new System.Drawing.Size(154, 22);
+            this.txtTempo.Size = new System.Drawing.Size(177, 22);
             this.txtTempo.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(372, 14);
+            this.label1.Font = new System.Drawing.Font("Cambria", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(87, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 31);
+            this.label1.Size = new System.Drawing.Size(406, 40);
             this.label1.TabIndex = 6;
             this.label1.Text = "CALCULADORA DE JUROS";
             // 
             // lbCapital
             // 
             this.lbCapital.AutoSize = true;
-            this.lbCapital.Location = new System.Drawing.Point(375, 230);
+            this.lbCapital.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCapital.Location = new System.Drawing.Point(90, 235);
             this.lbCapital.Name = "lbCapital";
-            this.lbCapital.Size = new System.Drawing.Size(52, 16);
+            this.lbCapital.Size = new System.Drawing.Size(80, 23);
             this.lbCapital.TabIndex = 7;
             this.lbCapital.Text = "Capital:";
             // 
             // lbTaxa
             // 
             this.lbTaxa.AutoSize = true;
-            this.lbTaxa.Location = new System.Drawing.Point(375, 292);
+            this.lbTaxa.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTaxa.Location = new System.Drawing.Point(90, 297);
             this.lbTaxa.Name = "lbTaxa";
-            this.lbTaxa.Size = new System.Drawing.Size(132, 16);
+            this.lbTaxa.Size = new System.Drawing.Size(201, 23);
             this.lbTaxa.TabIndex = 8;
             this.lbTaxa.Text = "Taxa (porcentagem):";
             // 
             // lbTempo
             // 
             this.lbTempo.AutoSize = true;
-            this.lbTempo.Location = new System.Drawing.Point(375, 363);
+            this.lbTempo.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempo.Location = new System.Drawing.Point(90, 368);
             this.lbTempo.Name = "lbTempo";
-            this.lbTempo.Size = new System.Drawing.Size(106, 16);
+            this.lbTempo.Size = new System.Drawing.Size(157, 23);
             this.lbTempo.TabIndex = 9;
             this.lbTempo.Text = "Tempo (meses):";
             // 
             // lbJuros
             // 
             this.lbJuros.AutoSize = true;
-            this.lbJuros.Location = new System.Drawing.Point(375, 436);
+            this.lbJuros.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbJuros.Location = new System.Drawing.Point(90, 441);
             this.lbJuros.Name = "lbJuros";
-            this.lbJuros.Size = new System.Drawing.Size(43, 16);
+            this.lbJuros.Size = new System.Drawing.Size(64, 23);
             this.lbJuros.TabIndex = 11;
             this.lbJuros.Text = "Juros:";
             // 
             // lbMontante
             // 
             this.lbMontante.AutoSize = true;
-            this.lbMontante.Location = new System.Drawing.Point(375, 164);
+            this.lbMontante.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMontante.Location = new System.Drawing.Point(90, 169);
             this.lbMontante.Name = "lbMontante";
-            this.lbMontante.Size = new System.Drawing.Size(65, 16);
+            this.lbMontante.Size = new System.Drawing.Size(104, 23);
             this.lbMontante.TabIndex = 13;
             this.lbMontante.Text = "Montante:";
             // 
             // txtMontante
             // 
             this.txtMontante.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMontante.Location = new System.Drawing.Point(628, 159);
+            this.txtMontante.Location = new System.Drawing.Point(320, 164);
             this.txtMontante.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMontante.Name = "txtMontante";
-            this.txtMontante.Size = new System.Drawing.Size(154, 22);
+            this.txtMontante.Size = new System.Drawing.Size(177, 22);
             this.txtMontante.TabIndex = 12;
             // 
             // txtJuros
             // 
             this.txtJuros.BackColor = System.Drawing.SystemColors.Window;
-            this.txtJuros.Location = new System.Drawing.Point(628, 431);
+            this.txtJuros.Location = new System.Drawing.Point(320, 436);
             this.txtJuros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtJuros.Name = "txtJuros";
-            this.txtJuros.Size = new System.Drawing.Size(154, 22);
+            this.txtJuros.Size = new System.Drawing.Size(177, 22);
             this.txtJuros.TabIndex = 14;
             // 
             // ComboBox
@@ -183,20 +192,20 @@
             "CALCULAR A TAXA",
             "CALCULAR O TEMPO",
             "CALCULAR JUROS"});
-            this.ComboBox.Location = new System.Drawing.Point(379, 101);
+            this.ComboBox.Location = new System.Drawing.Point(93, 106);
             this.ComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBox.Name = "ComboBox";
-            this.ComboBox.Size = new System.Drawing.Size(377, 24);
+            this.ComboBox.Size = new System.Drawing.Size(404, 24);
             this.ComboBox.TabIndex = 15;
             this.ComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(374, 78);
+            this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(89, 77);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(290, 20);
+            this.label7.Size = new System.Drawing.Size(355, 27);
             this.label7.TabIndex = 16;
             this.label7.Text = "Selecione o que desejar calcular:";
             // 
@@ -204,7 +213,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1163, 598);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(569, 598);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.ComboBox);
             this.Controls.Add(this.txtJuros);
@@ -219,10 +229,10 @@
             this.Controls.Add(this.txtTaxa);
             this.Controls.Add(this.txtCapital);
             this.Controls.Add(this.btLimpar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btCalcular);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormJurosSimples";
-            this.Text = "FormJurosSimples";
+            this.Text = "Calculadora De Juros Simples";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,7 +240,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btCalcular;
         private System.Windows.Forms.Button btLimpar;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox txtCapital;

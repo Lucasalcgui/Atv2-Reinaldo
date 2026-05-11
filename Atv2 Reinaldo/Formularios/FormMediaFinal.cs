@@ -134,6 +134,9 @@ namespace SimuladorMedia.Formularios
             }
         }
 
-     
+        private void txtMediaFinalAluno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
